@@ -1,0 +1,17 @@
+{
+  "name": "flyff-web",
+  "version": "0.1.0",
+  "description": "Flyff-Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joshua Sledden <JoshuaSledden@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/hapi": "^19.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.1.0"
+  }
+}
