@@ -1,14 +1,10 @@
 "use strict";
 
 const server = require("./server");
+const config = require("./config");
 
 const startServer = async () => {
     try {
-        const config  = {
-            host: "localhost",
-            port: 8080
-        }
-
         const app = await server(config);
         await app.start();
 
