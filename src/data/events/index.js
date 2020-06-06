@@ -8,7 +8,7 @@ const register = async({sql, getConnection}) => {
     const getEvents = async userId => {
         const cnx = await getConnection();
         const request = await cnx.request();
-        request.input("Account", sql.VarChar(32), userId);
+        request.input("userId", sql.VarChar(32), userId);
         return request.query(sqlQueries.getEvents);
     };
 

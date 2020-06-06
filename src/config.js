@@ -41,7 +41,7 @@ module.exports = {
     port: PORT,
     host: HOST,
     url: HOST_URL,
-    cookiePwd: COOKIE_ENRYPT_PWD,
+    cookiePwd: COOKIE_ENCRYPT_PWD,
 
     sql: {
         server: SQL_SERVER,
@@ -49,7 +49,7 @@ module.exports = {
         user: SQL_USER,
         password: SQL_PASSWORD,
         options: {
-            encrypt: sqlEncrypt;
+            encrypt: sqlEncrypt,
             enableArithAbort: true
         }
     },
