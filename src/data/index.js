@@ -6,6 +6,7 @@ const sql = require("mssql");
 const client = async (server, config) => {
     let pool = null;
 
+    // Attempt to close an existing connection pool.
     const closePool = async () => {
         try {
             await pool.close();
@@ -17,6 +18,7 @@ const client = async (server, config) => {
         }
     };
 
+    // Attempt to connect to an Sql server.
     const getConnection = async() => {
         try {
             if(pool) {

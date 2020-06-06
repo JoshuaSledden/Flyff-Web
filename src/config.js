@@ -1,5 +1,7 @@
 "use strict";
 
+// Config.js - Obtains environment variables and exports them into a more readable fashion.
+
 const dotenv = require("dotenv");
 const assert = require("assert");
 
@@ -21,6 +23,7 @@ const {
 
 const sqlEncrypt = process.env.SQL_ENCRYPT == "true";
 
+// Check the required variables are available.
 assert(PORT, "PORT is required");
 assert(HOST, "HOST is required");
 assert(HOST_URL, "HOST_URL is required");
@@ -33,6 +36,7 @@ assert(FLYFF_ORG_URL, "FLYFF_ORG_URL is required");
 assert(FLYFF_CLIENT_ID, "FLYFF_CLIENT_ID is required");
 assert(FLYFF_CLIENT_SECRET, "FLYFF_CLIENT_SECRET is required");
 
+// Export all config variables as a single accessible object.
 module.exports = {
     port: PORT,
     host: HOST,
