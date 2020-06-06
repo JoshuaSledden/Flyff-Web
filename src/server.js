@@ -3,6 +3,7 @@
 // Server.js - A module for creating/configuring the Hapi server.
 
 const Hapi = require("@hapi/hapi");
+const plugins = require("./plugins");
 const routes = require("./routes");
 
 const app = async config => {
@@ -12,6 +13,9 @@ const app = async config => {
     // Create the Hapi server and provide it our configuration.
     const server = Hapi.server({host, port});
     server.app.config = config;
+
+    // Register the plugins.
+    await plugins.register(server);
 
     // Register the server routes.
     await routes.register(server);
