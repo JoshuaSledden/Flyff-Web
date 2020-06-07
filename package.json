@@ -4,7 +4,7 @@
   "description": "Flyff-Web",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "devStart": "nodemon index.js"
   },
   "author": "Joshua Sledden <JoshuaSledden@gmail.com>",
   "license": "MIT",
@@ -12,7 +12,8 @@
     "@hapi/hapi": "^19.1.1",
     "dotenv": "^8.2.0",
     "fs-extra": "^9.0.0",
-    "mssql": "^6.2.0"
+    "mssql": "^6.2.0",
+    "nodemon": "^2.0.4"
   },
   "devDependencies": {
     "eslint": "^7.1.0"
