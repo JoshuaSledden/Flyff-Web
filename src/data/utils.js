@@ -1,6 +1,6 @@
 "use strict";
 
-const fs = reqiure("fs-extra");
+const fs = require("fs-extra");
 const {join} = require("path");
 
 /*  Load all Sql query files within a provided folder name
