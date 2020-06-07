@@ -1,3 +1,0 @@
-SELECT *
-FROM ACCOUNT_TBL
-WHERE account = @userId

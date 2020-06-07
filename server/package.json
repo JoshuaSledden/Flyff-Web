@@ -1,10 +1,10 @@
 {
-  "name": "flyff-web",
+  "name": "flyff-web-server",
   "version": "0.1.0",
-  "description": "Flyff-Web",
+  "description": "Flyff-Web Server-side",
   "main": "src/index.js",
   "scripts": {
-    "devStart": "nodemon index.js"
+    "dev_server": "nodemon index.js"
   },
   "author": "Joshua Sledden <JoshuaSledden@gmail.com>",
   "license": "MIT",

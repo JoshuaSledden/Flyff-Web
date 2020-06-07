@@ -5,10 +5,10 @@ const utils = require("../utils");
 const register = async({sql, getConnection}) => {
     const sqlQueries = await utils.loadSqlQueries("events");
     
-    const getEvents = async userId => {
+    const getEvents = async accountId => {
         const cnx = await getConnection();
         const request = await cnx.request();
-        request.input("userId", sql.VarChar(32), userId);
+        request.input("accountId", sql.VarChar(32), accountId);
         return request.query(sqlQueries.getEvents);
     };
 

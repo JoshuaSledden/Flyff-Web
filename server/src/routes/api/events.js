@@ -8,10 +8,10 @@ module.exports.register = async server => {
             try {
                 // Access the sql client through the request.
                 const dataClient = request.server.plugins.sql.client;
-                const userId = "test"; // Hard code for testing - to be changed.   
+                const accountId = "test"; // Hard code for testing - to be changed.   
 
                 // Call getEvents and return the response.
-                const response = await dataClient.events.getEvents(userId);
+                const response = await dataClient.events.getEvents(accountId);
                 
                 // Return only the recordset as JSON.
                 return response.recordset;
